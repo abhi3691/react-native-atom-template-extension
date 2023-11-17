@@ -10,7 +10,7 @@ export function activate(context: vscode.ExtensionContext) {
 			canSelectFiles: false,
 			canSelectFolders: true,
 			canSelectMany: false,
-			openLabel: 'Select the folder where you want to create the React Native project',
+			openLabel: 'Open',
 		});
 
 		if (!folderUri || folderUri.length === 0) {

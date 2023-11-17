@@ -3,7 +3,7 @@
   "displayName": "react-native-atom-template",
   "publisher": "abhinandvk",
   "description": "Simplify your React Native project setup with the React Native Atom Template extension for Visual Studio Code. This tool streamlines the creation of React Native projects using a curated Atom template, enhancing your development workflow and ensuring consistency across your projects.",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
     "vscode": "^1.84.0"
   },
