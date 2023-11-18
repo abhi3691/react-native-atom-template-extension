@@ -12,6 +12,9 @@
     "type": "git",
     "url": "https://github.com/abhi3691/react-native-atom-template-extension.git"
   },
+  "sponsor": {
+    "url": "https://github.com/sponsors/abhi3691"
+  },
   "categories": [
     "Extension Packs"
   ],
