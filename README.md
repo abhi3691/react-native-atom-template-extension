@@ -3,7 +3,9 @@
 This extension for Visual Studio Code allows you to create a new React Native project with ease using the `react-native-atom-template`.
 
 ## Features
-![Create React Native Project](<img src="images/create-react-native-project.gif" width="400" height="400">)
+
+
+<img src="images/create-react-native-project.gif" alt="Create React Native Project" width="400" height="400">
 ### Create React Native Project
 
 Use the command `react-native-atom-template.createReactNativeProject` to create a new React Native project. This command will prompt you to enter the name for your project, and it will then generate the project structure using the specified template.
