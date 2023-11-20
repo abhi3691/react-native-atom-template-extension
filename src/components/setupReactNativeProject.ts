@@ -1,7 +1,7 @@
 import * as vscode from 'vscode';
 import * as fs from 'fs';
 import * as os from 'os';
-import { setupMAcScript } from './script/mac/setup';
+import { setupMAcScript } from '../script/mac/setup';
 
 export const setupDisposable = vscode.commands.registerCommand('react-native-atom-template.setupReactNativeProject', async () => {
     try {
@@ -12,7 +12,7 @@ export const setupDisposable = vscode.commands.registerCommand('react-native-ato
 
             // Create a temporary setup script file
             const setupScriptPath = `${os.tmpdir()}/react_native_setup.sh`;
-            const setupScriptContent = setupMAcScript
+            const setupScriptContent = setupMAcScript;
 
             fs.writeFileSync(setupScriptPath, setupScriptContent);
 

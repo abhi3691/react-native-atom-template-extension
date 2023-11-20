@@ -19,7 +19,7 @@
   "engines": {
     "vscode": "^1.84.0"
   },
-  "icon": "react.png",
+  "icon": "assets/images/react.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/abhi3691/react-native-atom-template-extension.git"
@@ -36,14 +36,39 @@
     "commands": [
       {
         "command": "react-native-atom-template.createReactNativeProject",
-        "title": "Create React-Native Project"
+        "title": "Create React-Native Project",
+        "category": "React Native Atom Template"
       },
       {
         "command": "react-native-atom-template.setupReactNativeProject",
-        "title": "Setup React-Native Project"
+        "title": "Setup React-Native",
+        "category": "React Native Atom Template"
       }
-    ]
+    ],
+    "viewsContainers": {
+      "activitybar": [
+        {
+          "id": "rn-atom-sidebar-view",
+          "title": "react native atom template",
+          "icon": "assets/svg/react.svg"
+        }
+      ]
+    },
+    "views": {
+      "rn-atom-sidebar-view": [
+        {
+          "name": "react native atom template",
+          "type": "webview",
+          "id": "rn-atom-sidebar",
+          "title": "react native atom template",
+          "icon": "assets/svg/react.svg",
+          "contextualTitle": "react native atom template"
+        }
+      ]
+    }
   },
+  
+
   "scripts": {
     "vscode:prepublish": "npm run compile",
     "compile": "tsc -p ./",
