@@ -35,6 +35,8 @@ No known issues at the moment.
 
 ## Release Notes
 
+### 0.2.5
+- styles issue solved
 ### 0.2.3
 - added Side bar
 
