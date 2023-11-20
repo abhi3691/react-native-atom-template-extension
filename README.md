@@ -35,16 +35,21 @@ No known issues at the moment.
 
 ## Release Notes
 
-### 0.1.0
+### 0.2.3
+- added Side bar
 
-- Initial release of the React Native Project Creator Extension.
+### 0.2.2
+- patches
 
 ### 0.2.0
 
 - added setup react react native feature 
 
-### 0.2.2
-- patches
+### 0.1.0
+
+- Initial release of the React Native Project Creator Extension.
+
+
 
 ---
 
