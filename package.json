@@ -2,10 +2,11 @@
   "name": "react-native-atom-template",
   "displayName": "React Native Atom Template",
   "publisher": "abhinandvk",
-  "contributors": [
-    "akshay k"
-  ],
-  "maintainers": [
+  "maintainers": [{
+    "name": "abhinand V K",
+    "email": "abhinandvk41@gmail.com",
+    "url": "https://github.com/abhi3691"
+  },
     {
       "name": "akshay K",
       "email": "akshaykarandakkad92@gmail.com",
