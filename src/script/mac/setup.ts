@@ -1,4 +1,4 @@
-export const setupMAcScript =`#!/bin/bash
+export const setupMACScript =`#!/bin/bash
 
 # Install Xcode Command Line Tools
 xcode-select --install

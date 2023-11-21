@@ -1,6 +1,6 @@
 import * as vscode from "vscode";
 
-import { disposable } from "./createReactNativeProject";
+import { disposable } from "./components/createReactNativeProject";
 import { setupDisposable } from "./components/setupReactNativeProject";
 import { SidebarProvider } from "./components/SideBarPorvider";
 
