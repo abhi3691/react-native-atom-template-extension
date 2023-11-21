@@ -7,9 +7,9 @@ import { SidebarProvider } from "./components/SideBarPorvider";
 
 
 export function activate(context: vscode.ExtensionContext) {
-  console.log(
-    'Congratulations, your extension "react-native-atom-template" is now active!'
-  );
+  // console.log(
+  //   'Congratulations, your extension "react-native-atom-template" is now active!'
+  // );
   const sidebarProvider = new SidebarProvider(context.extensionUri);
 
 
