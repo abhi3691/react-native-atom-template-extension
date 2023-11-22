@@ -37,6 +37,9 @@ No known issues at the moment.
 
 ## Release Notes
 
+### 0.2.9
+- logo updated
+
 ### 0.2.8
 - README  updated
 ### 0.2.7
