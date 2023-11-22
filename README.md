@@ -1,5 +1,4 @@
 
-https://github.com/abhi3691/react-native-atom-template-extension/assets/54738565/8ef1d00b-02dd-474a-abd0-ef3fb824ba38
 # React Native Project Creator Extension
 
 This extension for Visual Studio Code allows you to create a new React Native project with ease using the `react-native-atom-template`.
