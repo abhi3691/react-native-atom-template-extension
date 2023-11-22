@@ -6,7 +6,7 @@ This extension for Visual Studio Code allows you to create a new React Native pr
 
 <img src="assets/images/sidebar.png" alt="Create React Native Project" width="100%" height="100%">
 
-<VIDEO src="assets/images/create-react-native-project.gif" alt="Create React Native Project" width="100%" height="100%">
+<video src="assets/video/create-react-native-project.mp4" alt="Create React Native Project" width="100%" height="100%">
 
 ### Setup React Native Project 
 
