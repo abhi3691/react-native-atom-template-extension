@@ -6,10 +6,9 @@ This extension for Visual Studio Code allows you to create a new React Native pr
 
 <img src="assets/images/sidebar.png" alt="Create React Native Project" width="100%" height="100%">
 
-<img src="assets/images/create-react-native-project.gif" alt="Create React Native Project" width="100%" height="100%">
+<VIDEO src="assets/images/create-react-native-project.gif" alt="Create React Native Project" width="100%" height="100%">
 
-### Setup React Native Project (MAC Only)
-## other os setup feature will comming on this week  
+### Setup React Native Project 
 
 Use the command `react-native-atom-template.setupReactNativeProject` to setup system for run  a new React Native project  . This command will run in terminal and setup all for run react native.
 
@@ -35,7 +34,9 @@ No known issues at the moment.
 
 ## Release Notes
 
-### 0.2.6
+### 0.2.8
+- README  updated
+### 0.2.7
 - windows and linux setup added
 
 ### 0.2.5
