@@ -9,8 +9,10 @@ sudo apt-get install -y nodejs
 # Install OpenJDK 11
 sudo apt-get install -y openjdk-11-jdk
 
-# Install Android Studio
-sudo snap install android-studio --classic
+# Wait for the user to install Android Studio manually
+read -p "Press Enter after you have installed Android Studio and setup emulator and SDK."
+
+# Download and install Android Studio (manual step)
 
 # Print instructions for Android Studio setup
 echo "Please follow these steps to configure Android Studio:"

@@ -58,7 +58,7 @@ export const setupDisposable = vscode.commands.registerCommand('react-native-ato
                 cwd: vscode.workspace.rootPath || undefined,
             });
 
-            terminal.sendText(`powershell ${setupScriptPath}`);
+            terminal.sendText(`Start-Process powershell -ArgumentList "-File ${setupScriptPath}" -Verb RunAs`);
             terminal.show(true);
         } else {
             vscode.window.showErrorMessage('This command is only supported on macOS | Linux | Windows');

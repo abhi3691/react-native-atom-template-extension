@@ -14,9 +14,12 @@ if (-not (Get-Command choco -ErrorAction SilentlyContinue)) {
 }
 
 # Install Node.js, Yarn, Git, and Microsoft OpenJDK 11 using Chocolatey
-choco install -y nodejs-lts yarn git microsoft-openjdk11
+choco install -y nodejs.install yarn git microsoft-openjdk11 
 
-# Install Android Studio
+# Wait for the user to install Android Studio manually
+read -p "Press Enter after you have installed Android Studio and setup emulator and SDK."
+
+# Download and install Android Studio 
 choco install -y androidstudio
 
 # Print message to guide the user to configure Android Studio
