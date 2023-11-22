@@ -35,6 +35,9 @@ No known issues at the moment.
 
 ## Release Notes
 
+### 0.2.6
+- windows and linux setup added
+
 ### 0.2.5
 - styles issue solved
 ### 0.2.3
