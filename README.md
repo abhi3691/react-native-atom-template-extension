@@ -6,6 +6,10 @@ This extension for Visual Studio Code allows you to create a new React Native pr
 ## Features
 <img src="assets/images/sidebar.png" alt="Create React Native Project" width="100%" height="100%">
 
+
+<img src="assets/images/Genrate_Folder.png" alt="Create React Native Project" width="100%" height="100%">
+
+
 https://github.com/abhi3691/react-native-atom-template-extension/assets/54738565/f2ff543d-b260-4f95-9d39-a0dced4d6567
 
 
@@ -37,6 +41,8 @@ No known issues at the moment.
 
 ## Release Notes
 
+### 1.0.2
+new create folder and file smothly
 ### 1.0.0
 added AI Generate component
 ### 0.2.9
