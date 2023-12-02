@@ -37,6 +37,8 @@ No known issues at the moment.
 
 ## Release Notes
 
+### 0.3.0
+added AI Generate component
 ### 0.2.9
 - logo updated
 

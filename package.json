@@ -43,6 +43,11 @@
         "command": "react-native-atom-template.setupReactNativeProject",
         "title": "Setup React-Native",
         "category": "React Native Atom Template"
+      },
+      {
+        "command": "react-native-atom-template.generateReactNativeApp",
+        "title": "Generate React-Native Component",
+        "category": "React Native Atom Template"
       }
     ],
     "viewsContainers": {
@@ -65,6 +70,16 @@
           "contextualTitle": "react native atom template"
         }
       ]
+    },
+    "configuration": {
+      "title": "React Native Atom Template",
+      "properties": {
+        "react-native-atom-template.apiKey": {
+          "type": "string",
+          "default": "",
+          "description": "ChatGPT API Key for React Native Atom Template extension."
+        }
+      }
     }
   },
   "scripts": {
@@ -76,15 +91,20 @@
     "test": "node ./out/test/runTest.js"
   },
   "devDependencies": {
-    "@types/vscode": "^1.84.0",
     "@types/mocha": "^10.0.3",
     "@types/node": "18.x",
+    "@types/vscode": "^1.84.0",
     "@typescript-eslint/eslint-plugin": "^6.9.0",
     "@typescript-eslint/parser": "^6.9.0",
+    "@vscode/test-electron": "^2.3.6",
     "eslint": "^8.52.0",
     "glob": "^10.3.10",
     "mocha": "^10.2.0",
-    "typescript": "^5.2.2",
-    "@vscode/test-electron": "^2.3.6"
+    "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7"
   }
 }

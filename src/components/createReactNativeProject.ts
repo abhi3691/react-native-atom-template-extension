@@ -49,3 +49,6 @@ export const disposable = vscode.commands.registerCommand('react-native-atom-tem
     const projectFolder = path.join(selectedFolder, projectName);
     vscode.commands.executeCommand("vscode.openFolder", vscode.Uri.file(projectFolder), true);
 });
+
+
+

@@ -1,5 +1,5 @@
-import { json } from 'stream/consumers';
-import * as vscode from 'vscode';
+import { json } from "stream/consumers";
+import * as vscode from "vscode";
 
 export class SidebarProvider implements vscode.WebviewViewProvider {
   private _view?: vscode.WebviewView;
@@ -21,18 +21,30 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
 
     webviewView.webview.onDidReceiveMessage(async (data) => {
       switch (data.command) {
-        case 'createProject':
-           vscode.commands.executeCommand('react-native-atom-template.createReactNativeProject');
-           // Add your logic for creating a React-Native project
-           break;
-        case 'setupReactNative':
-          vscode.commands.executeCommand('react-native-atom-template.setupReactNativeProject');
+        case "createProject":
+          vscode.commands.executeCommand(
+            "react-native-atom-template.createReactNativeProject"
+          );
+          // Add your logic for creating a React-Native project
+          break;
+        case "setupReactNative":
+          vscode.commands.executeCommand(
+            "react-native-atom-template.setupReactNativeProject"
+          );
           // Add your logic for setting up React-Native
-           break;
+          break;
+
+        case "generateReactNativeApp":
+          vscode.commands.executeCommand(
+            "react-native-atom-template.generateReactNativeApp"
+          );
+          // Add your logic for setting up React-Native
+          break;
+
         default:
-           // Handle unknown command
-           break;
-     }
+          // Handle unknown command
+          break;
+      }
     });
   }
 
@@ -42,7 +54,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
 
   private _getHtmlForWebview(webview: vscode.Webview): string {
     const styleMainUri = webview.asWebviewUri(
-      vscode.Uri.joinPath(this._extensionUri, 'styles.css')
+      vscode.Uri.joinPath(this._extensionUri, "styles.css")
     );
 
     return `<!DOCTYPE html>
@@ -56,6 +68,8 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
           <p class="info-text">Simplify your React Native project setup with the React Native Atom Template extension for Visual Studio Code.</p>
           <button class="custom-button" onclick="handleCreateProject()">Create React-Native Project</button>
           <button class="custom-button" onclick="handleSetupReactNative()">Setup React-Native</button>
+          <p class="info-text">Generate React Native Componts Using GPT</p>
+          <button class="custom-button" onclick="handleGenerateAi()"> Generate RN Component</button>
 
           <script>
           const vscode = acquireVsCodeApi();
@@ -66,10 +80,12 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
           function handleSetupReactNative() {
               vscode.postMessage({ command: 'setupReactNative' });
           }
+
+          function handleGenerateAi() {
+            vscode.postMessage({ command: 'generateReactNativeApp' });
+        }
       </script>
       </body>
       </html>`;
   }
-
-
 }
