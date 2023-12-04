@@ -5,8 +5,6 @@ This extension for Visual Studio Code allows you to create a new React Native pr
 ## Features
 
 
-<video src="assets/video/React-native-atom-extention.gif" 
- loop="loop" autoplay controls ></Video>
 <img src="assets/images/sidebar.png" alt="Side Bar" width="100%" height="100%">
 
 <img src="assets/images/Genrate_Folder.png" alt="Generate React Native Project" width="100%" height="100%">
