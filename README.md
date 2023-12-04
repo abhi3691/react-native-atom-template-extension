@@ -4,6 +4,9 @@ This extension for Visual Studio Code allows you to create a new React Native pr
 
 ## Features
 
+<video src="https://github-production-user-asset-6210df.s3.amazonaws.com/54738565/284961542-f2ff543d-b260-4f95-9d39-a0dced4d6567.mov?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231204%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231204T163413Z&X-Amz-Expires=300&X-Amz-Signature=63d90b9e4d8d10c2d82bf988b855fb3fa31c856650bd9191185efbcf9bc9f6d0&X-Amz-SignedHeaders=host&actor_id=54738565&key_id=0&repo_id=720165521" autoplay controls>
+
+
 <img src="assets/images/sidebar.png" alt="Create React Native Project" width="100%" height="100%">
 
 <img src="assets/images/Genrate_Folder.png" alt="Create React Native Project" width="100%" height="100%">
@@ -12,7 +15,7 @@ This extension for Visual Studio Code allows you to create a new React Native pr
 
 <img src="assets/images/Setup_api_prompt.png" alt="Create React Native Project" width="100%" height="100%">
 
-https://github.com/abhi3691/react-native-atom-template-extension/assets/54738565/f2ff543d-b260-4f95-9d39-a0dced4d6567
+
 
 ### Setup React Native Project
 
@@ -120,21 +123,3 @@ added AI Generate component
 
 ---
 
-## Following Extension Guidelines
-
-Make sure to follow the [VS Code Extension Guidelines](https://code.visualstudio.com/api/references/extension-guidelines) for best practices in extension development.
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code. Here are some useful editor keyboard shortcuts:
-
-- Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux).
-- Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux).
-- Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets.
-
-## For More Information
-
-- [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-- [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy creating React Native projects with ease!**
