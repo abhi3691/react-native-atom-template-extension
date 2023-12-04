@@ -78,6 +78,11 @@ No known issues at the moment.
 
 ## Release Notes
 
+## 1.0.4
+
+reademe video Added
+
+
 ## 1.0.3
 
 reademe updated added OPEN AI api setup image

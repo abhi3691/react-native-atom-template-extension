@@ -48,8 +48,21 @@
         "command": "react-native-atom-template.generateReactNativeApp",
         "title": "Generate React-Native Component",
         "category": "React Native Atom Template"
+      },
+      {
+        "command": "react-native-atom-template.regenerateReactNativeApp",
+        "title": "Regenerate React-Native Component",
+        "category": "React Native Atom Template"
       }
     ],
+    "menus": {
+      "editor/context": [
+        {
+          "when": "resourceFilename =~ /\\.tsx$/",
+          "command": "react-native-atom-template.regenerateReactNativeApp"
+        }
+      ]
+    },
     "viewsContainers": {
       "activitybar": [
         {
