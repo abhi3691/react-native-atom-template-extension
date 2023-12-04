@@ -7,13 +7,14 @@ This extension for Visual Studio Code allows you to create a new React Native pr
 
 <video src="https://github-production-user-asset-6210df.s3.amazonaws.com/54738565/284961542-f2ff543d-b260-4f95-9d39-a0dced4d6567.mov?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20231204%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20231204T163413Z&X-Amz-Expires=300&X-Amz-Signature=63d90b9e4d8d10c2d82bf988b855fb3fa31c856650bd9191185efbcf9bc9f6d0&X-Amz-SignedHeaders=host&actor_id=54738565&key_id=0&repo_id=720165521" autoplay controls ></Video>
 
-<img src="assets/images/sidebar.png" alt="Create React Native Project" width="100%" height="100%">
+<img src="assets/images/sidebar.png" alt="Side Bar" width="100%" height="100%">
 
-<img src="assets/images/Genrate_Folder.png" alt="Create React Native Project" width="100%" height="100%">
+<img src="assets/images/Genrate_Folder.png" alt="Generate React Native Project" width="100%" height="100%">
 
 <img src="assets/images/setup_api.png" alt="Create React Native Project" width="100%" height="100%">
 
-<img src="assets/images/Setup_api_prompt.png" alt="Create React Native Project" width="100%" height="100%">
+<img src="assets/images/Setup_api_prompt.png" alt="Setup React Native Project" width="100%" height="100%">
+<img src="assets/images/Setup_api_prompt.png" alt="ReGenerate React Native Project" width="100%" height="100%">
 
 
 
