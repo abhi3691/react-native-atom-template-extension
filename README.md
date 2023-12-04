@@ -81,7 +81,7 @@ No known issues at the moment.
 
 ## 1.0.4
 
-reademe video Added
+regerate feature added file right menu
 
 
 ## 1.0.3
