@@ -35,14 +35,7 @@ export const ProjecrCreation = async ({
       });
 
       // Path to the template zip file
-      const zipFilePath = path.join(
-        __dirname,
-        "..",
-        "..",
-        "src",
-        "data",
-        "template.zip"
-      );
+      const zipFilePath = path.join(__dirname, "..", "data", "template.zip");
 
       // Extract the template to the destination folder
       const zip = new AdmZip.default(zipFilePath);
