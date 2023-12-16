@@ -14,7 +14,8 @@ if (-not (Get-Command choco -ErrorAction SilentlyContinue)) {
 }
 
 # Install Node.js, Yarn, Git, and Microsoft OpenJDK 11 using Chocolatey
-choco install -y nodejs.install yarn git microsoft-openjdk11 
+choco install -y nodejs-lts microsoft-openjdk17
+
 
 # Wait for the user to install Android Studio manually
 read -p "Press Enter after you have installed Android Studio and setup emulator and SDK."
@@ -49,7 +50,7 @@ $platformToolsPath = "$env:LOCALAPPDATA\Android\Sdk\platform-tools"
 Write-Host "Node.js version: $(node -v)"
 Write-Host "Yarn version: $(yarn -v)"
 Write-Host "Git version: $(git --version)"
-Write-Host "Java JDK 11 version: $(java -version 2>&1 | findstr /I 'version')"
+Write-Host "Java JDK 17 version: $(java -version 2>&1 | findstr /I 'version')"
 Write-Host "Android Studio version: (Please check manually)"
 
 `;

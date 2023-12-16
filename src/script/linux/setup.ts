@@ -6,8 +6,8 @@ export const setupLinuxScript =`#!/bin/bash
 curl -sL https://deb.nodesource.com/setup_16.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
-# Install OpenJDK 11
-sudo apt-get install -y openjdk-11-jdk
+# Install OpenJDK 17
+sudo apt-get install -y openjdk-17-jdk
 
 # Wait for the user to install Android Studio manually
 read -p "Press Enter after you have installed Android Studio and setup emulator and SDK."

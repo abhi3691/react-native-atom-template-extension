@@ -4,7 +4,6 @@ This extension for Visual Studio Code allows you to create a new React Native pr
 
 ## Features
 
-
 <img src="assets/images/sidebar.png" alt="Side Bar" width="100%" height="100%">
 
 <img src="assets/images/Genrate_Folder.png" alt="Generate React Native Project" width="100%" height="100%">
@@ -13,9 +12,6 @@ This extension for Visual Studio Code allows you to create a new React Native pr
 
 <img src="assets/images/Setup_api_prompt.png" alt="Setup React Native Project" width="100%" height="100%">
 <img src="assets/images/Setup_api_prompt.png" alt="ReGenerate React Native Project" width="100%" height="100%">
-
-
-
 
 ### Setup React Native Project
 
@@ -57,10 +53,6 @@ Tailor the component generation process to fit your project's specific requireme
 
 - `openai.apiKey`: Your OpenAI API key for Generate Code.
 
-
-
-
-
 ## Enjoy Streamlined React Native Component Generation!
 
 ## Requirements
@@ -77,10 +69,13 @@ No known issues at the moment.
 
 ## Release Notes
 
+## 1.1.0
+
+react native version and all npm packages are latest version all time added (latest version recact-native build requilrd jdk 17)
+
 ## 1.0.4
 
 regerate feature added file right menu
-
 
 ## 1.0.3
 
@@ -127,4 +122,3 @@ added AI Generate component
 - Initial release of the React Native Project Creator Extension.
 
 ---
-

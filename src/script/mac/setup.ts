@@ -26,12 +26,13 @@ brew doctor
 brew install node
 brew install watchman
 
-# Tap homebrew/cask-versions and install Zulu 11
+# Tap homebrew/cask-versions and install Zulu 17
 brew tap homebrew/cask-versions
-brew install --cask zulu11
+brew install --cask zulu17
 
 # Get path to where cask was installed to double-click installer
-brew info --cask zulu11
+brew info --cask zulu17
+
 
 
 # Wait for the user to install Android Studio manually
@@ -52,7 +53,7 @@ echo "Node.js version: $(node -v)"
 echo "Gem version: $(gem -v)"
 echo "Ruby version: $(ruby -v)"
 echo "Watchman version: $(watchman -v)"
-echo "Zulu JDK 11 version: $(brew info --cask zulu11 | grep Version | awk '{print $2}')"
+echo "Zulu JDK 17 version: $(brew info --cask zulu17 | grep Version | awk '{print $2}')"
 echo "Android Studio version: (Please check manually)"
 echo "CocoaPods version: $(pod --version)"
 echo "Xcode version: $(xcodebuild -version | grep Xcode)"
