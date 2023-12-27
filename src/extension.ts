@@ -5,6 +5,7 @@ import { setupDisposable } from "./components/setupReactNativeProject";
 import { SidebarProvider } from "./components/SideBarPorvider";
 import { generateReactNativeApp } from "./components/generateReactNativeApp";
 import { regenerateReactNativeApp } from "./components/regenerateReactNativeApp";
+import { createComponents } from "./components/createComponents";
 
 export function activate(context: vscode.ExtensionContext) {
   const sidebarProvider = new SidebarProvider(context.extensionUri);
@@ -13,7 +14,8 @@ export function activate(context: vscode.ExtensionContext) {
     disposable,
     setupDisposable,
     generateReactNativeApp,
-    regenerateReactNativeApp
+    regenerateReactNativeApp,
+    createComponents
   );
   context.subscriptions.push(
     vscode.window.registerWebviewViewProvider(

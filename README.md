@@ -8,13 +8,6 @@ https://github.com/abhi3691/react-native-atom-template-extension/assets/54738565
 
 <img src="assets/images/sidebar.png" alt="Side Bar" width="100%" height="100%">
 
-<img src="assets/images/Genrate_Folder.png" alt="Generate React Native Project" width="100%" height="100%">
-
-<img src="assets/images/setup_api.png" alt="Create React Native Project" width="100%" height="100%">
-
-<img src="assets/images/Setup_api_prompt.png" alt="Setup React Native Project" width="100%" height="100%">
-<img src="assets/images/Setup_api_prompt.png" alt="ReGenerate React Native Project" width="100%" height="100%">
-
 ### Setup React Native Project
 
 Use the command `react-native-atom-template.setupReactNativeProject` to setup system for run a new React Native project . This command will run in terminal and setup all for run react native.
@@ -24,6 +17,13 @@ Use the command `react-native-atom-template.setupReactNativeProject` to setup sy
 Use the command `react-native-atom-template.createReactNativeProject` to create a new React Native project. This command will prompt you to enter the name for your project, and it will then generate the project structure using the specified template.
 
 ### Generate React Native Component
+
+<img src="assets/images/Genrate_Folder.png" alt="Generate React Native Project" width="100%" height="100%">
+
+<img src="assets/images/setup_api.png" alt="Create React Native Project" width="100%" height="100%">
+
+<img src="assets/images/Setup_api_prompt.png" alt="Setup React Native Project" width="100%" height="100%">
+<img src="assets/images/Setup_api_prompt.png" alt="ReGenerate React Native Project" width="100%" height="100%">
 
 ### 1. Seamless Component Generation:
 
@@ -36,6 +36,13 @@ Easily set up your OpenAI API key through the extension settings, unlocking the 
 ### 3. Customization Options:
 
 Tailor the component generation process to fit your project's specific requirements. Provide details such as file paths and additional prompts during the generation, ensuring that the created components seamlessly integrate into your project structure.
+
+### Create React Native Component
+
+<img src="assets/images/create_components.png" alt="ReGenerate React Native Project" width="100%" height="100%">
+<img src="assets/images/created_compontf_files.png" alt="ReGenerate React Native Project" width="100%" height="100%">
+
+Crate react native components fast with index.tsx and styles.ts
 
 ## Getting Started
 
@@ -70,6 +77,10 @@ This extension doesn't contribute any additional settings.
 No known issues at the moment.
 
 ## Release Notes
+
+# 1.2.0
+
+create react native components fast with pre files index.tsx and styles.ts
 
 ## 1.1.0
 

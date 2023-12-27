@@ -41,6 +41,13 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
           // Add your logic for setting up React-Native
           break;
 
+        case "createComponent":
+          vscode.commands.executeCommand(
+            "react-native-atom-template.createComponents"
+          );
+          // Add your logic for setting up React-Native
+          break;
+
         default:
           // Handle unknown command
           break;
@@ -68,8 +75,10 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
           <p class="info-text">Simplify your React Native project setup with the React Native Atom Template extension for Visual Studio Code.</p>
           <button class="custom-button" onclick="handleCreateProject()">Create React-Native Project</button>
           <button class="custom-button" onclick="handleSetupReactNative()">Setup React-Native</button>
-          <p class="info-text">Generate React Native Componts Using GPT</p>
-          <button class="custom-button" onclick="handleGenerateAi()"> Generate RN Component</button>
+          <p class="info-text">Generate React Native Code Using GPT</p>
+          <button class="custom-button" onclick="handleGenerateAi()"> Generate Code</button>
+          <p class="info-text">Create React Native Componts folder and styles folder fast</p>
+          <button class="custom-button" onclick="handleCreateComponent()"> Create Component</button>
 
           <script>
           const vscode = acquireVsCodeApi();
@@ -84,6 +93,9 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
           function handleGenerateAi() {
             vscode.postMessage({ command: 'generateReactNativeApp' });
         }
+        function handleCreateComponent() {
+          vscode.postMessage({ command: 'createComponent' });
+      }
       </script>
       </body>
       </html>`;

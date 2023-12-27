@@ -53,6 +53,11 @@
         "command": "react-native-atom-template.regenerateReactNativeApp",
         "title": "Regenerate React-Native Component",
         "category": "React Native Atom Template"
+      },
+      {
+        "command": "react-native-atom-template.createComponents",
+        "title": "Regenerate React-Native Component",
+        "category": "React Native Atom Template"
       }
     ],
     "menus": {
