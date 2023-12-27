@@ -9,6 +9,7 @@ import { installDependencies } from "./installDependencies";
 import { runBundleInstall } from "./runBundleInstall";
 import { runPodInstall } from "./runPodInstall";
 import { addFontsToInfoPlist } from "./addFontsToInfoPlist";
+import { checkJavaVersion } from "./checkJavaVersion";
 
 interface props {
   progressOptions: vscode.ProgressOptions;
@@ -51,6 +52,32 @@ export const ProjecrCreation = async ({
       const buildGradleContent = fs.readFileSync(buildGradlePath, "utf-8");
       const updatedBuildGradleContent = `${buildGradleContent}\napply from: file("../../node_modules/react-native-vector-icons/fonts.gradle")\n`;
       fs.writeFileSync(buildGradlePath, updatedBuildGradleContent, "utf-8");
+
+      const isJavaVersionValid = checkJavaVersion();
+
+      if (!isJavaVersionValid) {
+        // Replace ios configuration in react-native.config.js
+        const configFile = path.join(
+          destinationFolder,
+          "react-native.config.js"
+        );
+
+        try {
+          let configContents = fs.readFileSync(configFile, "utf-8");
+
+          // Use a regular expression to replace the ios configuration
+          configContents = configContents.replace(
+            /ios:\s*{[\s\S]*?},/,
+            "ios: {},"
+          );
+
+          fs.writeFileSync(configFile, configContents, "utf-8");
+        } catch (error) {
+          vscode.window.showErrorMessage(
+            "Error updating ios configuration in react-native.config.js:"
+          );
+        }
+      }
 
       // Install dependencies using npm install
       await vscode.window.withProgress(

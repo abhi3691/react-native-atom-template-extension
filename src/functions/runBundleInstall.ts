@@ -39,7 +39,6 @@ export async function runBundleInstall(
     // Report progress
     progress.report({ increment: 100 });
   } catch (error: any) {
-    console.log("error", error);
     // Report progress and show error message
     progress.report({ increment: 100 });
     vscode.window.showErrorMessage(

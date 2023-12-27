@@ -62,7 +62,7 @@ export const disposable = vscode.commands.registerCommand(
       const answer = await vscode.window.showInformationMessage(
         "Java version 17 or higher is required. Do you want to install Java 17?",
         "yes",
-        "No"
+        "No, Start with 0..72.7"
       );
 
       if (answer === "yes") {
@@ -74,7 +74,7 @@ export const disposable = vscode.commands.registerCommand(
             : "mac";
         vscode.env.openExternal(
           vscode.Uri.parse(
-            `https://reactnative.dev/docs/environment-setup?os=${devOS}`
+            `https://reactnative.dev/docs/environment-setup?platform=android&os=${devOS}`
           )
         );
       } else {

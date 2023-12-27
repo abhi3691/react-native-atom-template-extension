@@ -1,5 +1,6 @@
 import { execSync } from "child_process";
 import * as fs from "fs-extra";
+import * as vscode from "vscode";
 
 // Function to add fonts to iOS/info.plist
 export function addFontsToInfoPlist(infoPlistPath: string) {
@@ -48,6 +49,8 @@ export function addFontsToInfoPlist(infoPlistPath: string) {
     // Write the updated content back to the file
     fs.writeFileSync(infoPlistPath, updatedInfoPlistContent, "utf-8");
   } catch (error: any) {
-    console.log("Error adding fonts to Info.plist:", error);
+    vscode.window.showErrorMessage(
+      `Error installing bundler: ${(error as Error).message}`
+    );
   }
 }

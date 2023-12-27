@@ -48,7 +48,6 @@ export function installDependencies(
       stdio: "inherit",
     });
   } catch (error: any) {
-    console.log("errror", error);
     // Report progress and show error message
     progress.report({ increment: 100 });
     vscode.window.showErrorMessage(
