@@ -4,9 +4,13 @@ All notable changes to the "react-native-atom-template" extension will be docume
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+# 1.2.3
+
+bug Fix
+
 # 1.2.2
 
-bug fix
+Readme Updated
 
 # 1.2.0
 
