@@ -41,7 +41,6 @@ export async function createFiles(folderPath: string, folderName: string) {
   fs.writeFileSync(stylesPath, stylesContent);
 
   try {
-    console.log("indexPath", indexPath);
     const document = await vscode.workspace.openTextDocument(indexPath);
 
     await vscode.commands.executeCommand("editor.action.formatDocument");
@@ -57,12 +56,10 @@ export async function createFiles(folderPath: string, folderName: string) {
     });
     await document.save();
   } catch (error) {
-    console.error("Error opening or formatting file:", error);
     vscode.window.showErrorMessage(`Failed to format file. ${error}`);
   }
 
   try {
-    console.log("indexPath", stylesPath);
     const document = await vscode.workspace.openTextDocument(stylesPath);
     const editor = await vscode.window.showTextDocument(document);
 
@@ -77,7 +74,6 @@ export async function createFiles(folderPath: string, folderName: string) {
     await vscode.commands.executeCommand("editor.action.formatDocument");
     await document.save();
   } catch (error) {
-    console.error("Error opening or formatting file:", error);
     vscode.window.showErrorMessage(`Failed to format file. ${error}`);
   }
 

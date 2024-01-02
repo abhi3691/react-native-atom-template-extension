@@ -29,7 +29,6 @@ export async function runPodInstall(
         }
       });
     } catch (error: any) {
-      console.error("Error running pod install:", error.message);
       reject(error);
     }
   });

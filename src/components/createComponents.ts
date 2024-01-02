@@ -11,13 +11,29 @@ export const createComponents = vscode.commands.registerCommand(
     if (projectRoot && projectRoot.length > 0 && projectRoot[0]?.uri?.fsPath) {
       const directoryPath = path.join(projectRoot[0]?.uri?.fsPath, "src");
 
+      // Check if any file is currently open
+      const activeEditor = vscode.window.activeTextEditor;
+      let defaultUri;
+      if (
+        activeEditor &&
+        activeEditor.document.uri.fsPath.startsWith(directoryPath)
+      ) {
+        // If a file is open in the "src" directory, use its directory as the default
+        defaultUri = vscode.Uri.file(
+          path.dirname(activeEditor.document.uri.fsPath)
+        );
+      } else {
+        // Otherwise, use the project root "src" directory as the default
+        defaultUri = vscode.Uri.file(directoryPath);
+      }
+
       // Show a folder picker dialog
       const folderUri = await vscode.window.showOpenDialog({
         canSelectFolders: true,
         canSelectFiles: false,
         canSelectMany: false,
         openLabel: "Select Folder",
-        defaultUri: vscode.Uri.file(directoryPath),
+        defaultUri: defaultUri,
       });
 
       // If the user selected a folder, proceed with your logic
@@ -41,7 +57,7 @@ export const createComponents = vscode.commands.registerCommand(
         vscode.window.showInformationMessage("Folder selection canceled.");
       }
     } else {
-      console.error("No workspace folder found.");
+      vscode.window.showErrorMessage("No workspace folder found.");
     }
   }
 );

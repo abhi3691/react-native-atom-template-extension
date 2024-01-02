@@ -26,7 +26,6 @@ export async function openAndFormatFile(fileName: string): Promise<void> {
       await vscode.commands.executeCommand("editor.action.formatDocument");
       await document.save();
     } catch (error) {
-      console.error("Error opening or formatting file:", error);
       vscode.window.showErrorMessage(`Failed to format file. ${error}`);
     }
   }
