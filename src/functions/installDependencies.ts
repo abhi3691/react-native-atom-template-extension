@@ -33,14 +33,14 @@ export function installDependencies(
 
   try {
     // Install specified dependencies using npm install
-    const installDepsCommand = `npm install ${dependencies.join(" ")}`;
+    const installDepsCommand = `yarn add ${dependencies.join(" ")}`;
     childProcess.execSync(installDepsCommand, {
       cwd: destinationFolder,
       stdio: "inherit",
     });
 
     // Install specified devDependencies using npm install
-    const installDevDepsCommand = `npm install ${devDependencies.join(
+    const installDevDepsCommand = `yarn add ${devDependencies.join(
       " "
     )} --save-dev`;
     childProcess.execSync(installDevDepsCommand, {
