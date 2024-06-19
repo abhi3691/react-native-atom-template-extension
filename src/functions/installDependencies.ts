@@ -40,7 +40,7 @@ export function installDependencies(
     });
 
     // Install specified devDependencies using npm install
-    const installDevDepsCommand = `yarn add  -d ${devDependencies.join(" ")}`;
+    const installDevDepsCommand = `yarn add  -d  ${devDependencies.join(" ")}`;
     childProcess.execSync(installDevDepsCommand, {
       cwd: destinationFolder,
       stdio: "inherit",
