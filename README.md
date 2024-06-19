@@ -78,7 +78,11 @@ No known issues at the moment.
 
 ## Release Notes
 
-# 1.2.0
+# 1.2.5
+
+bug fix
+
+## 1.2.0
 
 create react native components fast with pre files index.tsx and styles.ts
 
