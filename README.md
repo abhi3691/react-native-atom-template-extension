@@ -78,6 +78,10 @@ No known issues at the moment.
 
 ## Release Notes
 
+# 1.4.2
+
+bug fix
+
 # 1.4.0
 
 - cli updated to `@react-native-community/cli@latest`
