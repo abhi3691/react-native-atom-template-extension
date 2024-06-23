@@ -22,6 +22,7 @@ export function installDependencies(
     "@shopify/flash-list",
     "react-native-svg",
     "react-native-vector-icons",
+    "@tanstack/react-query",
   ];
 
   const devDependencies = [
