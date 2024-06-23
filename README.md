@@ -78,7 +78,7 @@ No known issues at the moment.
 
 ## Release Notes
 
-# 1.3.0
+# 1.4.0
 
 - cli updated to `@react-native-community/cli@latest`
 - changed `react-native-simple-recyclerlistview` to `@shopify/flash-list` or with out list option added
