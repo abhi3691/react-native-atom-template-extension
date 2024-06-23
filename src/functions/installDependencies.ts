@@ -19,16 +19,13 @@ export function installDependencies(
     "react-native-responsive-fontsize",
     "react-native-safe-area-context",
     "react-native-screens",
-    "react-native-simple-recyclerlistview",
+    "@shopify/flash-list",
     "react-native-svg",
     "react-native-vector-icons",
-    "zustand",
   ];
 
   const devDependencies = [
-    "react-native-svg-transformer",
-    "metro-react-native-babel-transformer",
-    // ... other devDependencies
+    "react-native-svg-transformer", // ... other devDependencies
   ];
 
   try {

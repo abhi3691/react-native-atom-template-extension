@@ -4,6 +4,16 @@ All notable changes to the "react-native-atom-template" extension will be docume
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+# 1.3.0
+
+- cli updated to `@react-native-community/cli@latest`
+- changed `react-native-simple-recyclerlistview` to `@shopify/flash-list` or with out list option added
+- add `@tanstack/react-query` for asynchronous state management
+
+# 1.2.5
+
+bug fix
+
 # 1.2.3
 
 bug Fix

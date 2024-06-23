@@ -49,7 +49,7 @@ export const disposable = vscode.commands.registerCommand(
         location: vscode.ProgressLocation.Notification,
         title: `Creating React Native project '${projectName}'`,
       };
-      const command = `npx react-native init ${projectName}`;
+      const command = `npx @react-native-community/cli@latest  init ${projectName}`;
 
       ProjecrCreation({
         progressOptions,

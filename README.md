@@ -78,6 +78,12 @@ No known issues at the moment.
 
 ## Release Notes
 
+# 1.3.0
+
+- cli updated to `@react-native-community/cli@latest`
+- changed `react-native-simple-recyclerlistview` to `@shopify/flash-list` or with out list option added
+- add `@tanstack/react-query` for asynchronous state management
+
 # 1.2.5
 
 bug fix
