@@ -60,7 +60,7 @@ export const disposable = vscode.commands.registerCommand(
       });
     } else {
       const answer = await vscode.window.showInformationMessage(
-        "Java version 17 or higher is required. Do you want to install Java 17?",
+        "Java version 17 or higher is required. Do you want to install Java 17 or higher version?",
         "yes",
         "No, Start with 0..72.7"
       );
