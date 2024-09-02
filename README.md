@@ -78,6 +78,11 @@ No known issues at the moment.
 
 ## Release Notes
 
+# 1.4.3
+
+- solved issue in java version check windows
+- updated using ChatGPT model to 4.5 turo
+
 # 1.4.2
 
 bug fix
