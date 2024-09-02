@@ -92,8 +92,19 @@
     "configuration": {
       "title": "React Native Atom Template",
       "properties": {
-        "react-native-atom-template.apiKey": {
+        "react-native-atom-template.apiModel": {
           "type": "string",
+          "enum": [
+            "gpt-3.5-turbo",
+            "gpt-4-turbo",
+            "gpt-3.5-turbo-0301",
+            "gpt-4-turbo-0301"
+          ],
+          "default": "gpt-3.5-turbo",
+          "description": "Select ChatGPT Model"
+        },
+        "react-native-atom-template.apiKey": {
+          "type": "list",
           "default": "",
           "description": "ChatGPT API Key for React Native Atom Template extension."
         }

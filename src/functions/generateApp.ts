@@ -7,7 +7,8 @@ import { openAndFormatFile } from "./openAndFormatFile";
 export async function generateApp(
   fileName: string,
   description: string,
-  apiKey: string
+  apiKey: string,
+  model: string
 ): Promise<void> {
   const config = {
     headers: {
@@ -21,16 +22,15 @@ export async function generateApp(
       {
         location: vscode.ProgressLocation.Notification,
         title: "Generating React Native Component",
-        cancellable: false, // Set to true if you want to allow cancellation
+        cancellable: false,
       },
       async (progress, token) => {
-        // Update progress here
         progress.report({ increment: 0, message: "Initializing..." });
 
         const response = await axios.post(
           "https://api.openai.com/v1/chat/completions",
           {
-            model: "gpt-4-turbo",
+            model: `${model}`,
             messages: [
               {
                 role: "system",
@@ -52,7 +52,6 @@ export async function generateApp(
 
         progress.report({ increment: 50, message: "Writing to file..." });
 
-        // Write the generated content to a file in your React Native project
         const projectRoot = vscode.workspace.workspaceFolders;
         if (projectRoot && projectRoot.length > 0) {
           const fileNameParts = fileName.split("/");
@@ -64,7 +63,6 @@ export async function generateApp(
           );
           const filePath = path.join(directoryPath, `${file}.tsx`);
 
-          // Create directories if they don't exist
           await fs.promises.mkdir(directoryPath, { recursive: true });
           fs.writeFileSync(filePath, generatedComponentCode.trim());
         } else {
@@ -75,14 +73,45 @@ export async function generateApp(
         }
 
         progress.report({ increment: 100, message: "Generation complete!" });
-        // Open the file and format it
         openAndFormatFile(`${fileName}.tsx`);
       }
     );
   } catch (error: any) {
-    let errorMessage = error;
-    vscode.window.showErrorMessage(
-      `Failed to generate component. ${errorMessage}`
-    );
+    let errorMessage = "Failed to generate component.";
+
+    if (error.response) {
+      if (
+        error.response.data &&
+        error.response.data.error &&
+        error.response.data.error.message
+      ) {
+        errorMessage = error.response.data.error.message;
+      } else {
+        switch (error.response.status) {
+          case 401:
+            errorMessage =
+              "API key is invalid or has expired. Please check your API key.";
+            break;
+          case 402:
+            errorMessage =
+              "Insufficient credits. Please check your OpenAI account.";
+            break;
+          case 429:
+            errorMessage =
+              "Rate limit exceeded or quota exhausted. Please try again later.";
+            break;
+          default:
+            errorMessage = errorMessage;
+            break;
+        }
+      }
+    } else if (error.request) {
+      errorMessage =
+        "No response received from the server. Please check your network connection.";
+    } else {
+      errorMessage = error.message;
+    }
+
+    vscode.window.showErrorMessage(errorMessage);
   }
 }

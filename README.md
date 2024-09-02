@@ -78,6 +78,10 @@ No known issues at the moment.
 
 ## Release Notes
 
+# 1.4.5
+
+bug fix
+
 # 1.4.3
 
 - solved issue in java version check windows
