@@ -78,7 +78,7 @@ No known issues at the moment.
 
 ## Release Notes
 
-# 1.4.5
+# 1.4.6
 
 bug fix
 

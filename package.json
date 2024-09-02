@@ -104,7 +104,7 @@
           "description": "Select ChatGPT Model"
         },
         "react-native-atom-template.apiKey": {
-          "type": "list",
+          "type": "string",
           "default": "",
           "description": "ChatGPT API Key for React Native Atom Template extension."
         }
