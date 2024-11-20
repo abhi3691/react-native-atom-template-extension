@@ -78,9 +78,33 @@ No known issues at the moment.
 
 ## Release Notes
 
+# 1.5.0
+
+<img src="assets/images/create_from_folder.png" alt="Generate React Native Project" width="100%" height="100%">
+
+### Create Component from Folder
+
+This feature allows you to create a React Native component structure directly within a selected folder. With this functionality, you can streamline the process of organizing and generating components.
+
+#### Steps to Use:
+
+1. **Right-Click a Folder**:  
+   Open the Explorer view in Visual Studio Code, then right-click on a folder.
+
+2. **Select Command**:  
+   Choose the **Create Components** option from the context menu.
+
+3. **Name Your Component**:  
+   Provide a name for the new component folder when prompted.
+
+4. **Files Created**:  
+   The extension generates a boilerplate folder structure and files for the component in the selected directory.
+
+This simplifies setting up components and ensures consistency across your project.
+
 # 1.4.6
 
-bug fix
+bug fix˛
 
 # 1.4.3
 

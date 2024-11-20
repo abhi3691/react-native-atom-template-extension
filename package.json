@@ -46,7 +46,7 @@
       },
       {
         "command": "react-native-atom-template.generateReactNativeApp",
-        "title": "Generate React-Native Component",
+        "title": "Generate React-Native App",
         "category": "React Native Atom Template"
       },
       {
@@ -56,7 +56,7 @@
       },
       {
         "command": "react-native-atom-template.createComponents",
-        "title": "Regenerate React-Native Component",
+        "title": "Generate React-Native Component",
         "category": "React Native Atom Template"
       }
     ],
@@ -65,6 +65,13 @@
         {
           "when": "resourceFilename =~ /\\.tsx$/",
           "command": "react-native-atom-template.regenerateReactNativeApp"
+        }
+      ],
+      "explorer/context": [
+        {
+          "when": "explorerResourceIsFolder",
+          "command": "react-native-atom-template.createComponents",
+          "title": "Generate React-Native Component"
         }
       ]
     },
